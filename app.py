@@ -59,6 +59,3 @@ def predict():
         return format_currency(prediction[0], 'INR', locale='en_IN')
 
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
