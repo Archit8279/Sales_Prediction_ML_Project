@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/Background_image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust opacity based on image brightness */
+  z-index: -1;
+}
+
+#prediction{
+  color: white;
+}
+
+.card {
+  background-color: transparent !important; /* semi-transparent white */
+  backdrop-filter: blur(2px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid black;
+  color: white;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+}
+
+.card-body {
+  background-color: transparent !important;
+  color: white;
+}
+
+.card-header {
+  background-color: rgb(197, 22, 22) !important;
+  color: white;
+}
+select, input {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+input::placeholder {
+    color: white;
+    opacity: 1; /* Ensures full visibility (some browsers reduce opacity by default) */
+    font-weight: bolder;
+}
+
+select:hover, input:hover,
+select:focus, input:focus {
+  border-color: white;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255,255,255,0.4);
+}
+
+
+select.form-select {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+select.form-select option {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent dark background */
+  color: white;
+}
+/*
+
+select option {
+  background-color: black; /* fallback for dropdown menu 
+  color: white;
+} */
+
+
+label, h1{
+  color: white !important;
+  text-align: center;
+}
+
+
+
+
+
+/*
+.bg-dark{
+    background-color: #75767b;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+*/
